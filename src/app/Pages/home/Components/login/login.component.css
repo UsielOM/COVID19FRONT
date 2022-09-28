@@ -1,0 +1,32 @@
+.bg {
+    background-image: url(./../../../../assets/LOGIN2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.bg-fondo {
+    margin-left: 50px;
+    justify-content: center;
+    /* width: 430px;
+    height: 799px; */
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .bg-fondo {
+        margin-left: -14px;
+        /* width: 480px;
+        height: 799px; */
+    }
+}
+
+@media only screen and (min-width: 1950px) {
+    .bg-fondo {
+        margin-left: -14px;
+        /* width: 550px;
+        height: 799px; */
+    }
+}
