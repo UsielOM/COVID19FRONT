@@ -2,7 +2,7 @@
 
     <div class="row align-item-stretch">
         <div class="col bg d-none d-lg-block  col-md-5 col-lg-5 col-xl-6 rounded">
-            <div class=""> <img class="" src="" alt=""></div>
+            <div class=""> <img class="" src="" alt="infoCovid"></div>
         </div>
         <div class="col bg-white p-5 rounded-end">
 
@@ -15,21 +15,24 @@
             </h2>
             <!-- LOGIN -->
 
-            <form>
+            <!-- <form (ngSubmit)="login(user.Email)" #loginForm="ngForm"> -->
+            <form autocomplete="off" [formGroup]="miFormulario" (ngSubmit)="login()">
                 <div class="mb-4">
-                    <label for="email" class="form-label">Correo electronico</label>
-                    <input type="email" class="form-control" name="Email" id="Email">
+                    <label for="name" class="form-label">Ingresa su Correo</label>
+                    <!-- <input type="email" class="form-control" name="Email" id="Email" placeholder="Email"> -->
+                    <input class="form-control" type="text" formControlName="Email" placeholder="Ingrese su correo ">
                 </div>
                 <div class="mb-4">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" name="Password" id="Password">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <!-- <input type="password" class="form-control" name="Password" id="Password" [(ngModel)]="user.Password"> -->
+                    <input class="form-control" type="password" formControlName="Password" placeholder="Ingrese su contraseña">
                 </div>
                 <div class="mb-4">
                     <input type="checkbox" name="connected" class="form-check-input" id="">
                     <label for="connected" class="form-check-label">Mantenerme Conectado</label>
                 </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    <button class="btn btn-primary" type="submit">Iniciar Sesión</button>
                 </div>
                 <div class="my-3">
                     <span>No tienes cuenta? <a href="/registro"> Registrate</a> </span><br>
