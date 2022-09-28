@@ -1,10 +1,10 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { User } from '../Interface/User';
 import {AuthResponse} from '../Interface/Auth';
-import { catchError, map, of, tap } from 'rxjs';
-import { offset } from '@popperjs/core';
+import { catchError, map, of, tap, Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -28,5 +28,24 @@ export class AuthService {
     map(resp => resp.ok),
     catchError(err => of(err.error.msg))
     );
+  }
+
+  validarToken(): Observable<boolean>{
+    const url = `${environment.apiUrl}/get/renew`;
+    const headers = new HttpHeaders()
+      .set('x-token', localStorage.getItem('token') || '' );
+    return this.http.get<AuthResponse>(url, {headers})
+    .pipe(
+      map(resp =>{
+        localStorage.setItem('token', resp.token!)
+        this._user = {
+          idUser: resp.idUser!,
+          Email: resp.Email!
+        }
+        return resp.ok;
+      }),
+      catchError(err => of(false))
+    )
+    
   }
 }
