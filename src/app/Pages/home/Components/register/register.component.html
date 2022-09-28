@@ -16,21 +16,21 @@
             <div class="row g-3">
                 <div class="col-sm-6">
                     <label for="firstName" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="" value="" required="">
+                    <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="" value="" required="" [(ngModel)]="reg.FirstName">
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <label for="lastName" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="" [(ngModel)]="reg.LastName">
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
                 </div>
                 <div class="col-12">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="@example" value="" required="">
+                    <input type="email" class="form-control" id="email" placeholder="@example" value="" required="" [(ngModel)]="reg.Email">
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
@@ -38,14 +38,14 @@
 
                 <div class="col-12">
                     <label for="tel" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="" value="" required="">
+                    <input type="tel" class="form-control" id="phone" placeholder="" value="" required="" [(ngModel)]="reg.Phone">
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
                 </div>
                 <div class="col-6">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="" value="" required="">
+                    <input type="password" class="form-control" id="password" placeholder="" value="" required="" [(ngModel)]="reg.Password">
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="d-grid">
-                <button type="button" class="btn btn-primary">crear</button>
+                <button type="button" class="btn btn-primary" (click)="registroUser()">crear</button>
 
             </div>
             <div class="my-3">
