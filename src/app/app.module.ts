@@ -7,7 +7,7 @@ import { HomeModule } from './Pages/home/home.module';
 import { UserModule } from './Pages/user/user.module';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { ErrorComponent } from './Shared/error/error.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { ErrorComponent } from './Shared/error/error.component';
     HomeModule,
     UserModule,
     AppRoutingModule,
+    HttpClientModule
     
   ],
   providers: [],
