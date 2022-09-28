@@ -4,9 +4,9 @@ import { UserPagesComponent } from './user-pages.component';
 
 const routes: Routes = [
 
-  {path: 'User', component:UserPagesComponent, 
+  {path: '', component:UserPagesComponent, 
 children:[
-  
+
 ]
 }
 ];
