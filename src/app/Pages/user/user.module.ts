@@ -5,7 +5,8 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserPagesComponent } from './user-pages.component';
 import { NavbarUserComponent } from './Components/navbar-user/navbar-user.component';
 import { SidbarUserComponent } from './Components/sidbar-user/sidbar-user.component';
-import { UserPerfilComponent } from './Components/user-perfil/user-perfil.component';
+
+
 
 
 @NgModule({
@@ -13,7 +14,9 @@ import { UserPerfilComponent } from './Components/user-perfil/user-perfil.compon
     UserPagesComponent,
     NavbarUserComponent,
     SidbarUserComponent,
-    UserPerfilComponent
+    
+
+ 
   ],
   imports: [
     CommonModule,
