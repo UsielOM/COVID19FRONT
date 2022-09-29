@@ -10,9 +10,7 @@ export class UserPagesComponent implements OnInit {
 
   constructor(private authService:AuthService) { }
 
-  get usuario(){
-    return this.authService.userDatos;
-  }
+ 
 
 
   ngOnInit(): void {}
