@@ -13,7 +13,8 @@ export class UserPagesComponent implements OnInit {
   get usuario(){
     return this.authService.userDatos;
   }
-  ngOnInit(): void {
-  }
+
+
+  ngOnInit(): void {}
 
 }
