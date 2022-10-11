@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EncuestaService, preguntasBasica } from '../../service/encuesta.service';
 
 @Component({
   selector: 'app-cuestionario',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cuestionario.component.css']
 })
 export class CuestionarioComponent implements OnInit {
-  preguntasBasicas:any [] = []; 
-  constructor() { }
+  preguntasBasicas:preguntasBasica [] = []; 
+  constructor(private _encuestaService:EncuestaService) { }
 
   ngOnInit(): void {
+    this.preguntasBasicas = this._encuestaService.getPreguntas();
   }
 
 }

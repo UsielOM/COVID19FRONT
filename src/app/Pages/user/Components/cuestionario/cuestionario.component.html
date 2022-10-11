@@ -1,19 +1,19 @@
-<div class="container bg-warning  fc">
-    <div class="container bg-primary mt-3 mb-3 rounded">
+<div class="container bg-c rounded mt-3 mb-3 fc">
+    <div class="container  mt-1 mb-1 rounded">
 
-        <div class="row pt-3 ">
+        <div class="row mt-3 bg-tt rounded border ms-3 me-3 ">
             <h2> Encuesta</h2>
-            <div class="col-6 border border-dark">
+            <div class="col-6  ">
                 <p>Elige una opcion </p>
             </div>
-            <div class="col-3 border border-dark">
+            <div class="col-3  ">
                 <p>Si</p>
             </div>
-            <div class="col-3 border border-dark">
+            <div class="col-3  ">
                 <p>No</p>
             </div>
         </div>
-        <div class="row  border border-dark" *ngFor="let preguntas of preguntasBasicas">
+        <div class="row ms-3 bg-tc me-3 " *ngFor="let preguntas of preguntasBasicas">
             <div class="col-6 ">
                 <p>{{preguntas.pregunta}} </p>
             </div>
@@ -31,6 +31,10 @@
             </div>
 
         </div>
-        <a href="User/signos" class="btn btn-outline-primary">SIGUIENTE</a>
+        <hr>
+        <div class="container mt-3 mb-3 fc">
+            <a href="User/signos" class="btn btn-outline-primary">SIGUIENTE</a>
+        </div>
     </div>
+
 </div>
