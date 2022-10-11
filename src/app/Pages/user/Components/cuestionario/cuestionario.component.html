@@ -19,18 +19,19 @@
             </div>
             <div class="col-3 form-check">
 
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">{{preguntas.si}}</label>
+                <input class="form-check-input" type="radio" [name]="preguntas.name" id="flexRadioDefault">
+                <label class="form-check-label" for="flexRadioDefault">{{preguntas.si}}</label>
 
             </div>
             <div class="col-3 form-check">
 
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">{{preguntas.no}}</label>
+                <input class="form-check-input" type="radio" [name]="preguntas.name" id="flexRadioDefault">
+                <label class="form-check-label" for="flexRadioDefault">{{preguntas.no}}</label>
 
             </div>
 
         </div>
+
         <hr>
         <div class="container mt-3 mb-3 fc">
             <a href="User/signos" class="btn btn-outline-primary">SIGUIENTE</a>
