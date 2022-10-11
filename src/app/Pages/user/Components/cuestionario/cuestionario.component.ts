@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cuestionario.component.css']
 })
 export class CuestionarioComponent implements OnInit {
-
+  preguntasBasicas:any [] = []; 
   constructor() { }
 
   ngOnInit(): void {
