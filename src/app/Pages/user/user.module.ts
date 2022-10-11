@@ -6,6 +6,7 @@ import { UserPagesComponent } from './user-pages.component';
 import { NavbarUserComponent } from './Components/navbar-user/navbar-user.component';
 import { SidbarUserComponent } from './Components/sidbar-user/sidbar-user.component';
 import { PerfilComponent } from './Components/perfil/perfil.component';
+import { CuestionarioComponent } from './Components/cuestionario/cuestionario.component';
 
 
 
@@ -16,6 +17,7 @@ import { PerfilComponent } from './Components/perfil/perfil.component';
     NavbarUserComponent,
     SidbarUserComponent,
     PerfilComponent,
+    CuestionarioComponent,
     
 
  
