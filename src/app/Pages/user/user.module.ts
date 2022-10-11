@@ -7,6 +7,7 @@ import { NavbarUserComponent } from './Components/navbar-user/navbar-user.compon
 import { SidbarUserComponent } from './Components/sidbar-user/sidbar-user.component';
 import { PerfilComponent } from './Components/perfil/perfil.component';
 import { CuestionarioComponent } from './Components/cuestionario/cuestionario.component';
+import { SignosVitalesComponent } from './Components/signos-vitales/signos-vitales.component';
 
 
 
@@ -18,6 +19,7 @@ import { CuestionarioComponent } from './Components/cuestionario/cuestionario.co
     SidbarUserComponent,
     PerfilComponent,
     CuestionarioComponent,
+    SignosVitalesComponent,
     
 
  
