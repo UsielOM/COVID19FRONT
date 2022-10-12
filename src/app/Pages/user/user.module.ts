@@ -8,6 +8,7 @@ import { SidbarUserComponent } from './Components/sidbar-user/sidbar-user.compon
 import { PerfilComponent } from './Components/perfil/perfil.component';
 import { CuestionarioComponent } from './Components/cuestionario/cuestionario.component';
 import { SignosVitalesComponent } from './Components/signos-vitales/signos-vitales.component';
+import { RecomendacionesComponent } from './Components/recomendaciones/recomendaciones.component';
 
 
 
@@ -20,6 +21,7 @@ import { SignosVitalesComponent } from './Components/signos-vitales/signos-vital
     PerfilComponent,
     CuestionarioComponent,
     SignosVitalesComponent,
+    RecomendacionesComponent,
     
 
  
