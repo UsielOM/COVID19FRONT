@@ -59,12 +59,35 @@
 
     </div>
     <br>
+    <section>
+        <h2 class="text-center">UPLOADFILES</h2>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form (ngSubmit)="onSubmit()">
+                                    <div class="form-group">
+                                        <label>Elija la imagen a subir de su lengua</label>
+                                        <input class="form-control" type="file" name="image" (change)="selectImage()"><br>
+                                        <button class="btn btn-outline-warning" type="submit">Upload </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card ">
+                            <img class="img-center " src="../../../../../assets/upload.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
 </div>

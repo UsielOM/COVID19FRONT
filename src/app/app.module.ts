@@ -8,7 +8,7 @@ import { UserModule } from './Pages/user/user.module';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { ErrorComponent } from './Shared/error/error.component';
 import {HttpClientModule} from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     HomeModule,
     UserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule
     
