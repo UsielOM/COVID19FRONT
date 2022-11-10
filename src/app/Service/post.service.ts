@@ -14,4 +14,9 @@ export class PostService {
   createRegistroUser(register:Register):Observable<Register>{
     return this.http.post<Register>(environment.apiUrl + "/post/userRegistro", register )
   }
+
+
+  postImage(formDate:any):Observable<any>{
+    return this.http.post<any>(environment.apiUrl + "/file",formDate)
+  }
 }
