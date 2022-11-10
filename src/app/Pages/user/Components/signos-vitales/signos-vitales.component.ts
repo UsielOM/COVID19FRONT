@@ -14,7 +14,7 @@ export class SignosVitalesComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(){
-
+    
   }
   selectImage(event:any){
 
