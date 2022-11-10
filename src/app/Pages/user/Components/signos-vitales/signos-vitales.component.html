@@ -67,11 +67,11 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <form (ngSubmit)="onSubmit()">
+                                <form>
                                     <div class="form-group">
                                         <label>Elija la imagen a subir de su lengua</label>
                                         <input class="form-control" type="file" name="image" accept="image/*" (change)="selectImage($event)"><br>
-                                        <button class="btn btn-outline-warning" type="submit">Upload </button>
+                                        <button class="btn btn-outline-warning" type="button" (click)="onSubmit()">Upload </button>
                                     </div>
                                 </form>
                             </div>
