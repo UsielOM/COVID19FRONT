@@ -9,6 +9,7 @@ import { FooterComponent } from './Shared/footer/footer.component';
 import { ErrorComponent } from './Shared/error/error.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DoctorModule } from './Pages/doctor/doctor.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     HomeModule,
     UserModule,
+    DoctorModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule

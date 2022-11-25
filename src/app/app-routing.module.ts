@@ -12,6 +12,10 @@ path: 'User',
 loadChildren:() => import('./Pages/user/user.module').then(m =>m.UserModule), 
 canActivate:[ValidarTokenGuard], 
 canLoad:[ValidarTokenGuard]
+},
+{path: 'Doctor',
+loadChildren:() => import('./Pages/doctor/doctor.module').then(m => m.DoctorModule)
+
 }
 ];
 
