@@ -1,1 +1,29 @@
-<p>ver-pacientes works!</p>
+<div class="container">
+    <div class="row">
+        <div class="card" style="width: 100%; display: flex; justify-content: center;">
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Temperatura</th>
+                            <th scope="col">Oxigenacion</th>
+                            <th scope="col">Frecuencia Cardiaca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let arreglo of signosGet">
+                            <th scope="row">{{arreglo.idPaciente}}</th>
+                            <td>Usiel</td>
+                            <td>{{arreglo.Temperatura}}</td>
+                            <td>{{arreglo.Oxigenacion}}</td>
+                            <td>{{arreglo.F_Cardiaca}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
