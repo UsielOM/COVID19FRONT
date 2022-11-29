@@ -14,4 +14,8 @@ export class GetServiceService {
   getConsultas():Observable<Signos[]>{
     return this.http.get<Signos[]>(environment.apiUrl + '/get/consultas')
   }
+  
+  getSignosPacientes(idPaciente:String):Observable<Signos[]>{
+    return this.http.get<Signos[]>(environment.apiUrl + '/get/signos/'+ idPaciente);
+    }
 }
