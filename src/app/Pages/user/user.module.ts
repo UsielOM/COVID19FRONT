@@ -9,7 +9,7 @@ import { PerfilComponent } from './Components/perfil/perfil.component';
 import { CuestionarioComponent } from './Components/cuestionario/cuestionario.component';
 import { SignosVitalesComponent } from './Components/signos-vitales/signos-vitales.component';
 import { RecomendacionesComponent } from './Components/recomendaciones/recomendaciones.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -22,12 +22,14 @@ import { RecomendacionesComponent } from './Components/recomendaciones/recomenda
     CuestionarioComponent,
     SignosVitalesComponent,
     RecomendacionesComponent,
+
     
 
  
   ],
   imports: [
     CommonModule,
+    FormsModule,
     UserRoutingModule
   ]
 })

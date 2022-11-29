@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Signos, Signos2 } from 'src/app/Interface/signos';
 import { GetServiceService } from 'src/app/Service/get-service.service';
 import { PostService } from 'src/app/Service/post.service';
 import Swal from 'sweetalert2';
@@ -12,10 +13,13 @@ import { AuthService } from '../../../../Service/auth.service';
 export class SignosVitalesComponent implements OnInit {
   title='uploadFiles';
   image = '';
-  imgURL='../../../../../assets/upload.png'
+  imgURL='../../../../../assets/upload.png';
+  signosGet: Signos2  = new Signos2;
+
   constructor( private postService:PostService, private getService:GetServiceService, private authService:AuthService) { }
 
   ngOnInit(): void {
+    
   }
   onSubmit(){
     const formData = new FormData();
@@ -39,12 +43,18 @@ export class SignosVitalesComponent implements OnInit {
     );
     
   }
-  obtenerSignos(){
+  obtenerSignos(): void{
    let id = this.authService.userDatos.idUser
-    this.getService.getSignosPacientes(id).subscribe((reault) =>{
-      console.log(reault);
-    });
+  this,this.getService.getSignosPacientes(id).subscribe((signos2:Signos2) =>{
+    if(signos2 === null){
+      console.log('Error');
+      return;
+    }
+    this.signosGet = signos2;
+    console.log(this.signosGet);
+  })
   }
+
   selectImage(event:any){
 
     if(event.target.files.length > 0){

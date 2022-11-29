@@ -8,7 +8,7 @@ import { UserModule } from './Pages/user/user.module';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { ErrorComponent } from './Shared/error/error.component';
 import {HttpClientModule} from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { DoctorModule } from './Pages/doctor/doctor.module';
 @NgModule({
   declarations: [
@@ -22,6 +22,7 @@ import { DoctorModule } from './Pages/doctor/doctor.module';
     UserModule,
     DoctorModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule
     

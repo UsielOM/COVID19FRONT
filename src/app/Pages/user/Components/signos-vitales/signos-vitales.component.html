@@ -9,12 +9,13 @@
                 <div class="col-4 fc ">
 
                     <div class="card transparent ms-5" style="width: 18rem;">
+
                         <div class="card-body">
                             <h5 class="card-title">Oxigenación</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Mediciones</h6>
                             <br>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{signosGet.Oxigenacion}}%</div>
                             </div>
 
                         </div>
@@ -27,7 +28,7 @@
                             <h6 class="card-subtitle mb-2 text-muted">Mediciones</h6>
                             <br>
                             <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">35°</div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{signosGet.Temperatura}}°</div>
                             </div>
                         </div>
                     </div>
@@ -40,7 +41,7 @@
                             <br>
                             <label>Maxima</label>
                             <div class="progress">
-                                <div class="progress-bar bg-success " role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">130 ppm</div>
+                                <div class="progress-bar bg-success " role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> {{signosGet.F_Cardiaca}}ppm</div>
                             </div>
                             <br>
                             <label>Minima</label>
