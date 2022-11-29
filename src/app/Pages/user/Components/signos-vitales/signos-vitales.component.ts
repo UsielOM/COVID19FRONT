@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { GetServiceService } from 'src/app/Service/get-service.service';
 import { PostService } from 'src/app/Service/post.service';
 import Swal from 'sweetalert2';
+import { AuthService } from '../../../../Service/auth.service';
 
 @Component({
   selector: 'app-signos-vitales',
@@ -11,7 +13,7 @@ export class SignosVitalesComponent implements OnInit {
   title='uploadFiles';
   image = '';
   imgURL='../../../../../assets/upload.png'
-  constructor( private postService:PostService) { }
+  constructor( private postService:PostService, private getService:GetServiceService, private authService:AuthService) { }
 
   ngOnInit(): void {
   }
@@ -36,6 +38,12 @@ export class SignosVitalesComponent implements OnInit {
     })
     );
     
+  }
+  obtenerSignos(){
+   let id = this.authService.userDatos.idUser
+    this.getService.getSignosPacientes(id).subscribe((reault) =>{
+      console.log(reault);
+    });
   }
   selectImage(event:any){
 
