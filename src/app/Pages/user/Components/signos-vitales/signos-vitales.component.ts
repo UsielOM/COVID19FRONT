@@ -43,6 +43,7 @@ export class SignosVitalesComponent implements OnInit {
     );
     
   }
+  
   obtenerSignos(): void{
    let id = this.authService.userDatos.idUser
   this,this.getService.getSignosPacientes(id).subscribe((signos2:Signos2) =>{

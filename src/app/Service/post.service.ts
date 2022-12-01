@@ -19,4 +19,6 @@ export class PostService {
   postImage(formDate:any):Observable<any>{
     return this.http.post<any>(environment.apiUrl + "/file",formDate)
   }
+
+  
 }
