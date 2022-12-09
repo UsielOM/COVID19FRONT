@@ -6,6 +6,7 @@ import { DoctorPagesComponent } from './doctor-pages.component';
 import { VerPacientesComponent } from './Components/ver-pacientes/ver-pacientes.component';
 import { CitasHoyComponent } from './Components/citas-hoy/citas-hoy.component';
 import { SidbarDoctorComponent } from './Components/sidbar-doctor/sidbar-doctor.component';
+import { NavbarDoctorComponent } from './Components/navbar-doctor/navbar-doctor.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SidbarDoctorComponent } from './Components/sidbar-doctor/sidbar-doctor.
     DoctorPagesComponent,
     VerPacientesComponent,
     CitasHoyComponent,
-    SidbarDoctorComponent
+    SidbarDoctorComponent,
+    NavbarDoctorComponent
   ],
   imports: [
     CommonModule,
