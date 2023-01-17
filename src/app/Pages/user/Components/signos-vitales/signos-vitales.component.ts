@@ -45,7 +45,7 @@ export class SignosVitalesComponent implements OnInit {
   }
   
   obtenerSignos(): void{
-   let id = this.authService.userDatos.idUser
+   let id = this.authService.userDatos.id
   this,this.getService.getSignosPacientes(id).subscribe((signos2:Signos2) =>{
     if(signos2 === null){
       console.log('Error');
