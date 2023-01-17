@@ -4,5 +4,6 @@ export class Register{
         Email="" ;
         Phone="" ;
         Password="" ;
+        idRoll =2;
         
 }
