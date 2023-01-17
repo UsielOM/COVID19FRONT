@@ -5,13 +5,17 @@ import { DoctorRoutingModule } from './doctor-routing.module';
 import { DoctorPagesComponent } from './doctor-pages.component';
 import { VerPacientesComponent } from './Components/ver-pacientes/ver-pacientes.component';
 import { CitasHoyComponent } from './Components/citas-hoy/citas-hoy.component';
+import { SidbarDoctorComponent } from './Components/sidbar-doctor/sidbar-doctor.component';
+import { NavbarDoctorComponent } from './Components/navbar-doctor/navbar-doctor.component';
 
 
 @NgModule({
   declarations: [
     DoctorPagesComponent,
     VerPacientesComponent,
-    CitasHoyComponent
+    CitasHoyComponent,
+    SidbarDoctorComponent,
+    NavbarDoctorComponent
   ],
   imports: [
     CommonModule,
