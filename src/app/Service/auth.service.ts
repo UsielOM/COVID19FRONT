@@ -39,7 +39,7 @@ export class AuthService {
       map(resp =>{
         localStorage.setItem('token', resp.token!)
         this._user = {
-          idUser: resp.idUser!,
+          id: resp.id!,
           Email: resp.Email!
         }
         return resp.ok;

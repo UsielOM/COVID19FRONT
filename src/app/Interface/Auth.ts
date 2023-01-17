@@ -3,7 +3,7 @@
     ok: boolean,
     msg?: string,
     Email?: string,
-    idUser?: string,
+    id?: string,
     token?: string,
    
   }
