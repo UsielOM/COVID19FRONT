@@ -1,6 +1,6 @@
 export class Register{
-        FirstName ='';
-        LastName="" ;
+        Name="";
+        Lastname="" ;
         Email="" ;
         Phone="" ;
         Password="" ;
