@@ -16,8 +16,7 @@ export class SidbarUserComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log("Hola soy el id" + this.usuario.id)
-    console.log("Hola soy el correo: " + this.usuario.Email)
+   
   }
 
 }
