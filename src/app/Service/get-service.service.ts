@@ -20,7 +20,7 @@ export class GetServiceService {
     return this.http.get<Signos2>(environment.apiUrl + '/get/signos/'+ idPaciente);
     }
   
-    getUserOne(id:number):Observable<UserOne>{
+    getUserOne(id:string):Observable<UserOne>{
       return this.http.get<UserOne>(environment.apiUrl + '/get/User/'+ id);
     }
 

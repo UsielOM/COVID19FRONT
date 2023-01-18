@@ -4,12 +4,14 @@ export interface User{
 }
 
 
-export interface UserOne{
-    Name: string;
-    Lastname: string;
-    Email:string;
-    Phone:string;
-    Password: string;
-    idRoll:number;
+export class UserOne{
+    Name= "";
+    Lastname= "";
+    Email="";
+    Phone="";
+    Password= "";
+    idRoll= "";
 }
+
+
 
