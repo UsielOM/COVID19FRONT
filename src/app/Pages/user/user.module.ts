@@ -11,6 +11,7 @@ import { SignosVitalesComponent } from './Components/signos-vitales/signos-vital
 import { RecomendacionesComponent } from './Components/recomendaciones/recomendaciones.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroDatosMPComponent } from './Components/registro-datos-mp/registro-datos-mp.component';
+import { RegistroCitaComponent } from './Components/registro-cita/registro-cita.component';
 
 
 
@@ -24,6 +25,7 @@ import { RegistroDatosMPComponent } from './Components/registro-datos-mp/registr
     SignosVitalesComponent,
     RecomendacionesComponent,
     RegistroDatosMPComponent,
+    RegistroCitaComponent,
 
     
 
