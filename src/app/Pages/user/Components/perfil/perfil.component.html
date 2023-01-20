@@ -51,7 +51,10 @@
                 <p>Estado: </p>
                 <p>Nacionalidad: </p>
                 <P>Dosis aplicadas: </P>
-                <button class="btn btn-danger">Agrega tu infromacion </button>
+                <button class="btn btn-danger" *ngIf="!bandera">Agrega tu infromacion </button>
+
+                <button class="btn btn-danger" *ngIf="bandera">Actualiza</button>
+
             </div>
         </div>
 
