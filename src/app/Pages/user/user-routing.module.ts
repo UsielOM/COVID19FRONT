@@ -6,6 +6,7 @@ import { PerfilComponent } from './Components/perfil/perfil.component';
 import { SidbarUserComponent } from './Components/sidbar-user/sidbar-user.component';
 import { SignosVitalesComponent } from './Components/signos-vitales/signos-vitales.component';
 import { UserPagesComponent } from './user-pages.component';
+import { RegistroDatosMPComponent } from './Components/registro-datos-mp/registro-datos-mp.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ children:[
 {path:'perfil', component:PerfilComponent},
 {path:'encuesta', component:CuestionarioComponent},
 {path: 'signos', component:SignosVitalesComponent},
+{path:'signos', component:RegistroDatosMPComponent}
 
 
 ]
