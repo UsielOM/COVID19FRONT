@@ -24,4 +24,8 @@ export class GetServiceService {
       return this.http.get<UserOne>(environment.apiUrl + '/get/User/'+ id);
     }
 
+    getTrueAndFalse(idUser:string):Observable<any>{
+      return this.http.get<any>(environment.apiUrl + '/get/getPersonalInformation/' + idUser);
+    }
+
 }
