@@ -17,7 +17,7 @@ children:[
 {path:'perfil', component:PerfilComponent},
 {path:'encuesta', component:CuestionarioComponent},
 {path: 'signos', component:SignosVitalesComponent},
-{path:'signos', component:RegistroDatosMPComponent}
+{path:'registerMP', component:RegistroDatosMPComponent}
 
 
 ]
