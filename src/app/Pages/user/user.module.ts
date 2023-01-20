@@ -10,6 +10,7 @@ import { CuestionarioComponent } from './Components/cuestionario/cuestionario.co
 import { SignosVitalesComponent } from './Components/signos-vitales/signos-vitales.component';
 import { RecomendacionesComponent } from './Components/recomendaciones/recomendaciones.component';
 import { FormsModule } from '@angular/forms';
+import { RegistroDatosMPComponent } from './Components/registro-datos-mp/registro-datos-mp.component';
 
 
 
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     CuestionarioComponent,
     SignosVitalesComponent,
     RecomendacionesComponent,
+    RegistroDatosMPComponent,
 
     
 
