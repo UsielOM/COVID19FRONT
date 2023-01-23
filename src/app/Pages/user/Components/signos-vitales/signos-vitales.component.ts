@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Signos, Signos2 } from 'src/app/Interface/signos';
+import {  Signos2 } from 'src/app/Interface/signos';
 import { GetServiceService } from 'src/app/Service/get-service.service';
 import { PostService } from 'src/app/Service/post.service';
 import Swal from 'sweetalert2';
@@ -70,6 +70,5 @@ export class SignosVitalesComponent implements OnInit {
     }else{
       console.error(event);
     }
-    
   }
 }
