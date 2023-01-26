@@ -5,7 +5,6 @@ import { DoctorRoutingModule } from './doctor-routing.module';
 import { DoctorPagesComponent } from './doctor-pages.component';
 import { VerPacientesComponent } from './Components/ver-pacientes/ver-pacientes.component';
 import { CitasHoyComponent } from './Components/citas-hoy/citas-hoy.component';
-import { SidbarDoctorComponent } from './Components/sidbar-doctor/sidbar-doctor.component';
 import { NavbarDoctorComponent } from './Components/navbar-doctor/navbar-doctor.component';
 import { ContenedorComponent } from './Components/contenedor/contenedor.component';
 
@@ -15,7 +14,6 @@ import { ContenedorComponent } from './Components/contenedor/contenedor.componen
     DoctorPagesComponent,
     VerPacientesComponent,
     CitasHoyComponent,
-    SidbarDoctorComponent,
     NavbarDoctorComponent,
     ContenedorComponent
   ],
