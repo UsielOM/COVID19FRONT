@@ -6,7 +6,7 @@ import { DoctorPagesComponent } from './doctor-pages.component';
 const routes: Routes = [
 
   {path: '', component:DoctorPagesComponent,children:[
-    {path: '', component:VerPacientesComponent}
+    
   ]}
 ];
 
